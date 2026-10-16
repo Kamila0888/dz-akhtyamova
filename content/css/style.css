@@ -26,7 +26,6 @@ body {
     background-color: #2B2B2B;
     width: 100%;
     height: 100%;
-    
 }
 
 .container {
@@ -337,60 +336,85 @@ header {
     outline: none;
 }
 
+/* ================= FOOTER ================= */
 footer {
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
     font-family: 'Inter', Arial, sans-serif;
     width: 100%;
     height: 190px;
     background-color: #B7AAA4;
+    padding: 0 60px;
+    box-sizing: border-box;
 }
 
 .footer-icons {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-}
-
-.footer-icons img {
-    width: 25px;
-    height: 25px;
+    justify-content: center;
+    gap: 15px;
 }
 
 .group-footer-icons {
     display: flex;
-    font-size: 25px;
-    gap: 77px;
-    margin: 10px 0 10px 240px;
+    align-items: center;
+    gap: 15px;
+    font-size: 16px;
+    margin: 0;
+}
+
+.group-footer-icons img {
+    width: 25px;
+    height: 25px;
+    flex-shrink: 0;
+}
+
+.group-footer-icons p {
+    margin: 0;
+    font-size: 14px;
+    color: #2B2B2B;
+    line-height: 1.3;
 }
 
 .footer-subscription {
     display: flex;
     flex-direction: column;
-    margin-left: 90px;
-}
-
-.footer-subscription__btn {
-    width: 230px;
-    height: 30px;
-    font-size: 11px;
-    background-color: #E3A6AF;
-    border: none;
-    color: white;
-    border-radius: 5px;
-    margin-top: 10px;
+    margin-left: 0;
+    max-width: 300px;
 }
 
 .footer-subscription__heading {
-    font-size: 25px;
-    margin-bottom: 10px;
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: #2B2B2B;
 }
 
 .footer-subscription__description {
-    font-size: 8px;
+    font-size: 11px;
     margin-bottom: 10px;
+    color: #2B2B2B;
+    line-height: 1.4;
 }
+
+.footer-subscription__form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-subscription__btn {
+    width: 100%;
+    height: 32px;
+    font-size: 12px;
+    background-color: #E3A6AF;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 0;
+    cursor: pointer;
+}
+/* =============== /FOOTER ================= */
 
 .burger {
     display: none;

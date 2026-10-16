@@ -1,65 +1,9 @@
 <?php
-$hour = date('G');
-
-if ($hour >= 8 && $hour < 20) {
-    $theme = 'style.css';
-} else {
-    $theme = 'night.css';
-}
+$title = 'О нас';
+$base = '../';
+require __DIR__ . '/includes/header.php';
 ?>
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Музей Ароматов — Главная</title>
-    <link rel="stylesheet" href="content/css/<?php echo $theme; ?>">
-</head>
-<body>
-<div class="container">
-    <header>
-        <div class="logo">
-            <img class="logo__img" src="content/images/logo.png" alt="Логотип">
-            <div class="logo__text">
-                <p class="logo__heading">МУЗЕЙ</p>
-                <p class="logo__subtitle">АРОМАТОВ</p>
-            </div>
-        </div>
-        <div class="block__text">
-            <p class="block__text-heading">МУЗЕЙ <br> АРОМАТОВ</p>
-            <p class="block__text-slogan">ИСТОРИЯ В КАЖДОМ ФЛАКОНЕ</p>
-        </div>
-        <nav class="navigation">
-            <ul class="navigation__list">
-                <li class="navigation__item"><a class="navigation__link" href="index.php">ГЛАВНАЯ</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="pages/contact.php">КОНТАКТЫ</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="pages/catalog.php">КАТАЛОГ</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="pages/about.php">О НАС</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="pages/sale.php">АКЦИИ</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="pages/login.php">ВХОД</a>/<a href="pages/registration.php">РЕГИСТРАЦИЯ</a>
-                </li>
-            </ul>
-        </nav>
-        <nav class="navigation-mobile">
-            <ul class="navigation__list">
-                <li class="navigation__item"><a class="navigation__link" href="index.php">ГЛАВНАЯ</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="pages/contact.php">КОНТАКТЫ</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="pages/catalog.php">КАТАЛОГ</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="pages/about.php">О НАС</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="pages/sale.php">АКЦИИ</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="pages/login.php">ВХОД</a>/<a href="pages/registration.php">РЕГИСТРАЦИЯ</a>
-                </li>
-            </ul>
-        </nav>
-        <button class="burger">
-            <span> </span>
-            <span> </span>
-            <span> </span>
-        </button>
-    </header>
-    <main>
+<main>
         <section class="main-img">
             <div class="group-main-img__text">
                 <div class="main-img__name">Магазин <br>
@@ -189,28 +133,7 @@ if ($hour >= 8 && $hour < 20) {
 
     </main>
 </div>
-<footer>
-    <div class="footer-icons">
-        <div class="group-footer-icons">
-            <img src="content/images/icon-2.png" alt="Метка">
-            <p>г. Санкт-Петербург, наб. реки Мойки, д.24</p>
-        </div>
-        <div class="group-footer-icons">
-            <img src="content/images/icon-3.png" alt="Телефон">
-            <p>+7 (912) 345 67 89</p>
-        </div>
-        <div class="group-footer-icons">
-            <img src="content/images/icon-4.png" alt="Email">
-            <p>help@site.com</p>
-        </div>
-    </div>
-    <div class="footer-subscription">
-        <p class="footer-subscription__heading">Подпишись на новости</p>
-        <p class="footer-subscription__description">Узнавайте  первыми о новинках, акциях и <br> ароматных событиях</p>
-        <input class="new-products__input" type="email" placeholder="Ваш email">
-        <button class="footer-subscription__btn">Подписаться</button>
-    </div>
-</footer>
 <script src="content/script/main.js"></script>
+<?php require __DIR__ . '/includes/footer.php'; ?>
 </body>
-</html>м
+</html>
