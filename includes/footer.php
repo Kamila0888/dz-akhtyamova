@@ -23,11 +23,17 @@
         </form>
     </div>
 </footer>
-
-<script src="<?php echo $base; ?>content/script/main.js"></script>
-</body>
-</html>
-
+<?php
+//Задание 4
+$date_today = date('d.m.Y');
+$days_left = (date('L') ? 366 : 365) - date('z');
+?>
+<div style="text-align: left; width: 100%; padding: 10px; background-color: #EAE5DE; color: #8B5A2B;">
+    <p style="margin-bottom: 5px;">Сейчас: <b><?php echo $date_today; ?></b></p>
+    <p>До Нового года: <b><?php echo $days_left; ?></b> дней</p>
+</div>
+</footer>
+</footer>
 <script src="<?php echo $base; ?>content/script/main.js"></script>
 </body>
 </html>
