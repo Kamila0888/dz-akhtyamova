@@ -161,7 +161,6 @@ require __DIR__ . '/includes/header.php';
             $count_vowels++;
         }
     }
-
     //Задание 3
     $count_words = count(explode(' ', $text_for_count));
     ?>
@@ -169,7 +168,6 @@ require __DIR__ . '/includes/header.php';
     <div style="text-align: right; margin: 20px 0; font-size: 14px; font-family: Arial, sans-serif;">
         <p>Количество гласных букв: <b><?php echo $count_vowels; ?></b></p>
         <p>Количество слов: <b><?php echo $count_words; ?></b></p>
-    </div>
 
 </main>
 </div>

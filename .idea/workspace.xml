@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9219bf7a-9af9-4367-90fb-a35e63939531" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +69,7 @@
       <workItem from="1791956471250" duration="3540000" />
       <workItem from="1792046088314" duration="122000" />
       <workItem from="1792080549874" duration="5121000" />
-      <workItem from="1793175733753" duration="1643000" />
+      <workItem from="1793175733753" duration="1964000" />
     </task>
     <servers />
   </component>
